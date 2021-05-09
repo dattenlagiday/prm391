@@ -1,0 +1,117 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.prm391.project.moneymanager.ExpenseActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/expense_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/header_Color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/expense_header"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/expense_header">
+
+        <GridLayout
+            android:id="@+id/expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:columnCount="2"
+            android:rowCount="2"
+            tools:context="com.prm391.project.moneymanager.ExpenseActivity">
+
+            <Button
+                android:id="@+id/add_category"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/add_category"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/add_expense"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/add_expense"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/delete_category"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/delete_category"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/delete_expense"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/delete_expense"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/view_category"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/view_category"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/view_expense"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/view_expense"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/update_expense"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/update_expense"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>

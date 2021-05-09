@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prm391.project.moneymanager.ResetActivity">
+
+    <TextView
+        android:id="@+id/reset_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/header_Color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/reset_header"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/sc1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reset_header"
+        android:background="@color/background_color"
+        android:scrollbars="vertical">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="2">
+
+
+            <Button
+                android:id="@+id/reset_budget"
+                style="@android:style/Widget.DeviceDefault.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_above="@+id/reset_liabilities"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/reset_expenses"
+                android:text="@string/reset_budget"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:targetApi="p" />
+
+            <Button
+                android:id="@+id/reset_expenses"
+                style="@android:style/Widget.DeviceDefault.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/reset_expenses"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:targetApi="p" />
+
+            <Button
+                android:id="@+id/reset_liabilities"
+                style="@android:style/Widget.DeviceDefault.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_below="@+id/reset_expenses"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="15dp"
+                android:text="@string/reset_liabilities"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:targetApi="p" />
+
+            <Button
+                android:id="@+id/reset_goals"
+                style="@android:style/Widget.DeviceDefault.Button.Colored"
+                android:layout_width="185dp"
+                android:layout_height="105dp"
+                android:layout_alignTop="@+id/reset_liabilities"
+                android:layout_alignEnd="@+id/reset_budget"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:padding="15dp"
+                android:text="@string/reset_goals"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:targetApi="p" />
+
+        </GridLayout>
+    </ScrollView>
+    </RelativeLayout>

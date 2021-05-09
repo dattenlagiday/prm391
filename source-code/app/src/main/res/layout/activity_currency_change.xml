@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".CurrencyChangeActivity">
+
+    <TextView
+        android:id="@+id/currency_change_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/header_Color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/currency_change_header"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_below="@+id/expense_header"
+        android:layout_marginTop="73dp"
+        android:background="@color/background_color"
+        android:scrollbars="horizontal">
+
+        <GridLayout
+            android:id="@+id/expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_color"
+            android:columnCount="2"
+            android:rowCount="2"
+            tools:context="com.prm391.project.moneymanager.CurrencyChangeActivity">
+
+            <EditText
+                android:id="@+id/edtAmountCurrency"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="1"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtCurrency1"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="EUR"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="30dp"
+                android:text="to"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edtAmountCurrency2"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edtCurrency2"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="VND"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnChange"
+                style="@android:style/Widget.DeviceDefault.Button.Colored"
+                android:layout_width="135dp"
+                android:layout_height="65dp"
+                android:layout_column="1"
+                android:layout_marginLeft="35dp"
+                android:onClick="click"
+                android:text="Change" />
+
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>
